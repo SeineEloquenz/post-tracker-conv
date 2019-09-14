@@ -4,3 +4,6 @@
 
 This small tool is designed to take in an excel sheet from one department of the Deutsche Post AG and convert it into
 the format another department uses. 
+
+## Dependencies
+* Apache POI
