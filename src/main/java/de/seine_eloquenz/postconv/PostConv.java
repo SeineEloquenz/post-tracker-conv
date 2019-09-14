@@ -31,7 +31,7 @@ public class PostConv {
     }
 
     public void replaceColons(Workbook book) {
-         Sheet sheet = book.getSheet(SHEET_NAME); //TODO
+         Sheet sheet = book.getSheet(SHEET_NAME);
         sheet.rowIterator().forEachRemaining(
                 r -> r.getCell(COLUMN_INDEX).setCellValue(Double.parseDouble(r.getCell(COLUMN_INDEX).getStringCellValue().replace("-",""))));
     }
